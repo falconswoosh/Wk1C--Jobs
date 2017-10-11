@@ -1,0 +1,8 @@
+<h1>Jobs List</h1>
+<ul>
+  @foreach (var job in Model)
+  {
+    <li><a href='/jobs/@job.GetId()'>@job.GetCompanyName()</a></li>
+  }
+</ul>
+<a href = '/jobs/new'>Add new job </a>
