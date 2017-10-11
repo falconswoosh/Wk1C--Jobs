@@ -1,0 +1,21 @@
+<h1>@Model["resumePerson"].GetFullName() </h1>
+<h3>@Model["resumePerson"].GetPhoneNumber()</h3>
+<h3>@Model["resumePerson"].GetEmail()</h3>
+
+@foreach (var job in Model["resumeAllJobs"])
+{
+  <h2>@job.GetCompanyName()</h2>
+  <h3>@job.GetJobTitle()</h3>
+  <ul>
+  <li>@job.GetJobStart()</li>
+  <li>@job.GetJobEnd()</li>
+  <li>@job.GetJobDescription()</li>
+  </ul>
+}
+
+<p>
+<a href="/person/jobs/new">Add another Job</a>
+</p>
+<p>
+<a href="/person/new">Change you Information</a>
+</p>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Professional Resumes, right here!</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    @Html.Partial("Header")
+    <div class="container under-header">
+      @RenderBody()
+    </div>
+    @Html.Partial("Footer")
+  </body>
+</html>
